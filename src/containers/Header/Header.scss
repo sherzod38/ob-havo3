@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: #42436a;
+    h1 {
+        color: #fff;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+    .search-input {
+        position: relative;
+        input[type=search] {
+            border: none;
+            padding: 10px 20px;
+            outline: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .search-result {
+            position: absolute;
+            background-color: grey;
+            width: 100%;
+        }
+    }
+
+    .weather-result-card {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        box-sizing: border-box;
+        text-decoration: none;
+        .weather-result-icon {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    background-color: #28384d;
+    margin: 0;
+    padding: 0;
+}
+
+.main-weather {
+    text-align: center;
+    color: #fff;
+    .weather-icon{
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+    }
+    .weather-status {
+        color: #984063;
+    }
+    .weather-city {
+        color:  #d0ff00;
+    }
+}

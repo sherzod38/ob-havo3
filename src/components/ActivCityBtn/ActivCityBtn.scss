@@ -1,0 +1,12 @@
+.city-switcher-btn {
+    text-transform: capitalize;
+    background-color: #984063;
+    padding: 20px 40px;
+    border: none;
+    outline: none;
+    color: #fff;
+    margin: 10px 20px;
+    &.active{
+        background-color: #41436a;
+    }
+}
