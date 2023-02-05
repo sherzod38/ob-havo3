@@ -40,7 +40,7 @@ const HomepPage = () => {
             // always executed
           }); 
     }
-    console.log(activeWeather.data)
+
     useEffect(() => {
         fetchWeatherInfo();
     }, [activeCity])    
@@ -57,8 +57,8 @@ const HomepPage = () => {
                             <img className='weather-icon' src={weatherCodeParse(activeWeather.data.weather[0].id)}/>
                             <div>
                                 {
-                                    activeWeather.data.weather.map((weather) => (
-                                        <h1>It's <span className='weather-status'> {weather.main}</span> now in <span className="weather-city">{activeWeather.data.name}</span></h1>
+                                    activeWeather.data.weather.map((weather, index) => (
+                                        <h1 key={index}>It's <span className='weather-status'> {weather.main}</span> now in <span className="weather-city">{activeWeather.data.name}</span></h1>
                                     ))
                                 }
                             </div>

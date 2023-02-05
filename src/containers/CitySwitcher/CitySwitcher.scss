@@ -1,4 +1,8 @@
 .city-switcher {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+    gap: 1rem;
 }
